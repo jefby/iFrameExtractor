@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-FH-KtW">
+                                <rect key="frame" x="13" y="564" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJH-TD-Z3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmW-KG-Oqu">
+                                <rect key="frame" x="232" y="562" width="39" height="30"/>
+                                <state key="normal" title="Time:"/>
+                                <connections>
+                                    <action selector="showTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdF-KP-Ofr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFf-Lr-5gu">
+                                <rect key="frame" x="288" y="568" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LU8-qq-GM9">
+                                <rect key="frame" x="65" y="51" width="488" height="488"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LU8-qq-GM9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="BqM-t6-btf"/>
+                            <constraint firstItem="LU8-qq-GM9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="DLm-eY-8LG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mch-FH-KtW" secondAttribute="bottom" constant="6" id="En9-10-26U"/>
+                            <constraint firstItem="LU8-qq-GM9" firstAttribute="centerX" secondItem="pFf-Lr-5gu" secondAttribute="centerX" id="b9w-OE-r71"/>
+                            <constraint firstItem="Mch-FH-KtW" firstAttribute="baseline" secondItem="pFf-Lr-5gu" secondAttribute="baseline" id="g6P-Mj-vye"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LU8-qq-GM9" secondAttribute="trailing" constant="27" id="hyy-eg-1ig"/>
+                            <constraint firstItem="pFf-Lr-5gu" firstAttribute="leading" secondItem="tmW-KG-Oqu" secondAttribute="trailing" constant="17" id="nOy-0O-HS6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tmW-KG-Oqu" secondAttribute="bottom" constant="8" symbolic="YES" id="pYS-Ua-f6w"/>
+                            <constraint firstItem="tmW-KG-Oqu" firstAttribute="top" secondItem="LU8-qq-GM9" secondAttribute="bottom" constant="23" id="wvO-mh-h3F"/>
+                            <constraint firstItem="Mch-FH-KtW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="zye-wE-BmD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LU8-qq-GM9" id="wAL-ZN-W8I"/>
+                        <outlet property="label" destination="pFf-Lr-5gu" id="kII-3j-1eN"/>
+                        <outlet property="playButton" destination="Mch-FH-KtW" id="VJU-Jw-U8y"/>
+                        <outlet property="time" destination="tmW-KG-Oqu" id="wLw-xk-Ab1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="483"/>
+        </scene>
+    </scenes>
+</document>
