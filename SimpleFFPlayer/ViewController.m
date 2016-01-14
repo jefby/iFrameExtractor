@@ -19,7 +19,10 @@
 
 - (id)init{
     self = [super init];
-   
+    //change orientation 
+    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
+    [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+    
     return self;
 }
 - (IBAction)showTime:(id)sender {
@@ -29,11 +32,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //video = [[FFDecoder alloc] initWithVideo:[Utilities bundlePath:@"sophie.mov"]];
-    video = [[FFDecoder alloc] initWithVideo:@"http://30.2.45.185/sample_iTunes.mov"];
+    video = [[FFDecoder alloc] initWithVideo:[Utilities bundlePath:@"Jellyfish-3-Mbps-1080p-hevc.mkv"]];
+    //video = [[FFDecoder alloc] initWithVideo:@"http://techslides.com/demos/sample-videos/small.mp4"];
     // set output image size
-    video.outputWidth = 426;
-    video.outputHeight = 320;
+    video.outputWidth = 640;
+    video.outputHeight = 480;
     
     // print some info about the video
     NSLog(@"video duration: %f",video.duration);

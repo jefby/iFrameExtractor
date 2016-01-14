@@ -27,8 +27,8 @@
 		9C1F3CB01C4615AC00175F3A /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1F3CA91C4615AC00175F3A /* libavfilter.a */; };
 		9C1F3CB11C4615AC00175F3A /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1F3CAA1C4615AC00175F3A /* libavdevice.a */; };
 		9C1F3CB21C4615AC00175F3A /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1F3CAB1C4615AC00175F3A /* libavcodec.a */; };
-		9C1F3CB41C4616D700175F3A /* sophie.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F3CB31C4616D700175F3A /* sophie.mov */; };
 		9C1F3CB71C46185800175F3A /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F3CB61C46185800175F3A /* Utilities.m */; };
+		9C1F3D0B1C47A76700175F3A /* Jellyfish-3-Mbps-1080p-hevc.mkv in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F3D0A1C47A76700175F3A /* Jellyfish-3-Mbps-1080p-hevc.mkv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +78,9 @@
 		9C1F3CA91C4615AC00175F3A /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
 		9C1F3CAA1C4615AC00175F3A /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "FFmpeg-iOS/lib/libavdevice.a"; sourceTree = "<group>"; };
 		9C1F3CAB1C4615AC00175F3A /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "FFmpeg-iOS/lib/libavcodec.a"; sourceTree = "<group>"; };
-		9C1F3CB31C4616D700175F3A /* sophie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sophie.mov; sourceTree = SOURCE_ROOT; };
 		9C1F3CB51C46185800175F3A /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = ../Utilities.h; sourceTree = "<group>"; };
 		9C1F3CB61C46185800175F3A /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = ../Utilities.m; sourceTree = "<group>"; };
+		9C1F3D0A1C47A76700175F3A /* Jellyfish-3-Mbps-1080p-hevc.mkv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jellyfish-3-Mbps-1080p-hevc.mkv"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +172,7 @@
 		9C1F3C671C45EEBE00175F3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C1F3CB31C4616D700175F3A /* sophie.mov */,
+				9C1F3D0A1C47A76700175F3A /* Jellyfish-3-Mbps-1080p-hevc.mkv */,
 				9C1F3C681C45EEBE00175F3A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -302,11 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1F3CB41C4616D700175F3A /* sophie.mov in Resources */,
 				9C1F3C771C45EEBE00175F3A /* LaunchScreen.storyboard in Resources */,
 				9C1F3C741C45EEBE00175F3A /* Assets.xcassets in Resources */,
 				9C1F3C721C45EEBE00175F3A /* Main.storyboard in Resources */,
 				9C1F3C9B1C45EF0F00175F3A /* FFmpeg-iOS in Resources */,
+				9C1F3D0B1C47A76700175F3A /* Jellyfish-3-Mbps-1080p-hevc.mkv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +569,7 @@
 				9C1F3C931C45EEBE00175F3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C1F3C941C45EEBE00175F3A /* Build configuration list for PBXNativeTarget "SimpleFFPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +578,7 @@
 				9C1F3C961C45EEBE00175F3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C1F3C971C45EEBE00175F3A /* Build configuration list for PBXNativeTarget "SimpleFFPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +587,7 @@
 				9C1F3C991C45EEBE00175F3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
