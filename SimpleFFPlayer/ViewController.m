@@ -29,7 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    video = [[FFDecoder alloc] initWithVideo:[Utilities bundlePath:@"sophie.mov"]];
+    //video = [[FFDecoder alloc] initWithVideo:[Utilities bundlePath:@"sophie.mov"]];
+    video = [[FFDecoder alloc] initWithVideo:@"http://30.2.45.185/sample_iTunes.mov"];
     // set output image size
     video.outputWidth = 426;
     video.outputHeight = 320;
@@ -39,7 +40,7 @@
     NSLog(@"video size: %d x %d", video.sourceWidth, video.sourceHeight);
     
     // video images are landscape, so rotate image view 90 degrees
-    [_imageView setTransform:CGAffineTransformMakeRotation(M_PI/2)];
+    //[_imageView setTransform:CGAffineTransformMakeRotation(M_PI/2)];
 
 }
 

@@ -79,6 +79,13 @@
                                      sws_flags, NULL, NULL, NULL);
     
 }
++ (void)initialize
+{
+    avcodec_register_all();
+    av_register_all();
+    avformat_network_init();
+
+}
 
 -(id)initWithVideo:(NSString *)moviePath{
     self = [super init];
@@ -87,8 +94,7 @@
     }
     pFormatCtx = avformat_alloc_context();
     AVCodec * pCodec = NULL;
-    avcodec_register_all();
-    av_register_all();
+
     
     
     if(avformat_open_input(&pFormatCtx, [moviePath cStringUsingEncoding:NSUTF8StringEncoding], NULL, NULL) != 0){
